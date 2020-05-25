@@ -15,7 +15,7 @@ endef
 
 define Package/$(PKG_NAME)/description
 	Install to emmc script for phicomm n1, which will help you to copy openwrt system to emmc.
-	Run "n1-install" in terminal to run this program!
+	Execute "n1-install" in terminal to run this program!
 endef
 
 define Build/Prepare
