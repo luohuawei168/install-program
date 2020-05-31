@@ -16,8 +16,7 @@ sd=$(lsblk | grep -oE 'sd[a-z]' | sort | uniq)
 
 sd=$(lsblk | grep -w -E '/|/overlay' | grep -oE 'sd[a-z]')
 [ $sd ] || {
-        error "you are running in emmc mode, please boot system with usb!" && exit 1
-    }
+    error "you are running in emmc mode, please boot system with usb!" && exit 1
 }
 
 dev_emmc="/dev/$emmc"
