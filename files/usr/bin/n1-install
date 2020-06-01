@@ -112,11 +112,11 @@ tar -cf - lib | (cd $ins_root && tar -xpf -)
 echo "  --> copy root..."
 tar -cf - root | (cd $ins_root && tar -xpf -)
 echo "  --> copy sbin..."
-tar -cf --> sbin | (cd $ins_root && tar -xpf -)
-echo "  - copy usr..."
-tar -cf --> usr | (cd $ins_root && tar -xpf -)
-echo "  - copy www..."
-tar -cf --> www | (cd $ins_root && tar -xpf -)
+tar -cf - sbin | (cd $ins_root && tar -xpf -)
+echo "  --> copy usr..."
+tar -cf - usr | (cd $ins_root && tar -xpf -)
+echo "  --> copy www..."
+tar -cf - www | (cd $ins_root && tar -xpf -)
 
 [ -f init ] && cp -a init $ins_root
 
