@@ -4,7 +4,7 @@ Execute `n1-install` in terminal to run this program!
  **注意：  
    一键安装到 emmc 脚本( phicomm n1 )已迁移至 openwrt package。使用方法如下，悉知！！**
 
-   **用法**：  
+   **用法**： 在package下 
    1、`git clone https://github.com/luohuawei168/install-program`  
    2、执行 `make menuconfig` ，选中 Utilities 下的 install-program
       ``` 
